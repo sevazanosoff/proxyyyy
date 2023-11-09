@@ -1,0 +1,21 @@
+header {
+	background-color: $primary-color;
+	color: $background-color;
+	padding: 1rem;
+}
+
+.main-content {
+	margin-top: 2rem;
+}
+
+@media (max-width: $breakpoint-mobile) {
+	// Стили для мобильных устройств
+}
+
+@media (max-width: $breakpoint-tablet) {
+	// Стили для планшетов
+}
+
+@media (max-width: $breakpoint-desktop) {
+	// Стили для десктопов
+}

@@ -1,0 +1,46 @@
+.user-list {
+	list-style-type: none;
+	padding: 0;
+
+	.user-item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px;
+		margin-bottom: 10px;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		transition: background-color 0.2s ease-in-out;
+
+		&:hover {
+			background-color: #f8f8f8;
+		}
+
+		.user-info {
+			.user-name {
+				font-weight: bold;
+				margin-right: 5px;
+			}
+
+			.user-username {
+				color: #555;
+				font-style: italic;
+			}
+		}
+
+		.user-links {
+			a {
+				text-decoration: none;
+				padding: 5px 10px;
+				border-radius: 4px;
+				background-color: #3498db;
+				color: white;
+				margin-left: 10px;
+
+				&:hover {
+					background-color: darken(#3498db, 10%);
+				}
+			}
+		}
+	}
+}
