@@ -5,12 +5,13 @@ module.exports = {
     mode: 'development',
     entry: './src/index.js',
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'build'),
         filename: 'bundle.js'
     },
     resolve: {
         extensions: ['.js', '.jsx', '.json'],
     },
+
     module: {
         rules: [
             {
@@ -44,6 +45,7 @@ module.exports = {
             filename: 'index.html'
         })
     ],
+
     devServer: {
         static: {
             directory: path.join(__dirname, 'dist'),
